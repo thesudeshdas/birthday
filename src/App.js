@@ -9,7 +9,7 @@ import {
   LEAP,
   PRIME,
   LUCKY,
-  PALLINDROME
+  PALLINDROME,
 } from "./index.js";
 
 export default function App() {

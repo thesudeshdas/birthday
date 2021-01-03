@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Montserrat:wght@400&family=Roboto&display=swap");
+
+:root {
+  --theme-primary: #0ea5e9;
+  --theme-primary-dark: #0369a1;
+  --theme-secondary: #dc2626;
+
+  --bg-primary: #18181b;
+  --bg-secondary: #3f3f46;
+  
+  --text-primary: #ffffff;
+
+  --lato: "Lato", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+  --roboto: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+}
+
+#root {
+  height: 100%;
+}
+
+.container-web-app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-content {
+  text-align: center;
+  flex: 1 0 auto;
+}
+
+h1,
+p {
+  font-family: Lato;
+}
+
+/* navigation */
+nav {
+  background-color: var(--theme-primary);
+  text-align: center;
+  border: 5px solid var(--bg-primary);
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+nav h1 a {
+  font-size: 2em;
+  margin: 0.5em 0;
+  color: var(--bg-primary);
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0.5em;
+  padding: 0.5em;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+}
+
+nav ul li:hover {
+  transform: scale(1.5);
+  background-color: var(--theme-primary-dark);
+  border-radius: 0.2em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--bg-primary);
+  font-family: var(--montserrat);
+  font-weight: 400;
+}
+nav .active a {
+  font-weight: 600;
+  border-bottom: 2px solid var(--bg-primary);
+}
+
+/* footer */
+footer {
+  background-color: var(--theme-primary);
+  flex-shrink: 0;
+  text-align: center;
+}
+
+footer h2 {
+  font-family: var(--montserrat);
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 1em;
+  transition: all 250ms ease-in-out;
+}
+
+footer ul li:hover {
+  transform: scale(1.5);
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--bg-primary);
+  font-family: var(--lato);
+}
+
+/* homepage */
+.container-homepage {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.container-homepage h1 {
+  margin: 0.5em;
+  font-size: 2.2em;
+}
+
+.container-games {
+  display: flex;
+  border: 2px solid var(--theme-primary);
+  border-radius: 0.5em;
+  padding: 1em 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1em;
+  margin-bottom: 1em;
+}
+
+.container-games .game-card {
+  margin: 1em;
+  width: 15em;
+  height: 10em;
+  text-align: center;
+  position: relative;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.container-games .game-card:hover {
+  transform: scale(1.75);
+  border: 5px solid white;
+  border-radius: 0.8em;
+}
+
+.container-games .game-card img {
+  width: 100%;
+  opacity: 0.7;
+  border-radius: 0.5em;
+  border: thin solid white;
+}
+
+.link-game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: var(--montserrat);
+  font-weight: bolder;
+  -webkit-text-stroke: 1.5px var(--text-primary);
+  vertical-align: middle;
+}
+
+
+/* indiviual games */
+.game {
+  color: white;
+}

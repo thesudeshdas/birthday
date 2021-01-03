@@ -20,5 +20,7 @@
         "react"
     ],
     "rules": {
+        "react/prop-types": 0,
+        "import/no-duplicates": 0
     }
 }

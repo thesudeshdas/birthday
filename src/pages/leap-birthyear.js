@@ -4,11 +4,11 @@ import { useState } from "react";
 const LEAP = () => {
   const [yearToCheck, setYearToCheck] = useState(1900);
 
-  const changeHandler = event => {
+  const changeHandler = (event) => {
     setYearToCheck(event.target.value.slice(0, 4));
   };
 
-  const checkLeap = year => {
+  const checkLeap = (year) => {
     console.log(year);
   };
 

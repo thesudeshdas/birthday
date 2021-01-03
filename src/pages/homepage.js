@@ -15,7 +15,7 @@ const HOME = () => {
         <div className="game-card">
           <img src={leapImg} alt="leap-pic" width="100%" />
           <Link to="/leap-birthyear" className="link-game">
-            Leap Birthyear
+            Leap Birthyear for something
           </Link>
         </div>
         <div className="game-card">

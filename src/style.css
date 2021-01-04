@@ -195,5 +195,50 @@ footer ul li a {
 
 /* indiviual games */
 .game {
-  color: white;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.game h2 {
+  font-family: var(--roboto);
+  color: var(--theme-primary);
+}
+
+.game input {
+  padding: 0.5em;
+  border: 5px solid var(--theme-primary);
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+.game button {
+  display: block;
+  margin: 1em auto;
+  font-size: 1.2em;
+  font-family: var(--roboto);
+  font-weight: bolder;
+  padding: 0.5em 1em;
+  background-color: var(--theme-primary);
+  border: none;
+  border-radius: 0.2em;
+  outline: none;
+}
+
+.game .container-output {
+  border: 1px solid var(--text-primary);
+  border-radius: 0.2em;
+  margin: 1em;
+}
+
+.game .message {
+  display: inline-block;
+  color: var(--text-primary);
+}
+
+.game .container-output .btn-reset {
+  display: inline-block;
+  margin: 0.5em 2em;
+  background-color: var(--bg-primary);
+  color: var(--theme-primary);
+  border: 2px solid var(--theme-primary);
 }

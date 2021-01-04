@@ -77,13 +77,15 @@ const LEAP = () => {
 
   return (
     <div className="game">
-      <h1>
-        {" "}
-        <u> Is Your Birth Year a Leap Year? </u>{" "}
-      </h1>
-      <h2> Please enter your birthday </h2>
-      <input type="date" onChange={changeHandler} />
-      <button onClick={() => userMessage(yearToCheck)}>Check</button>
+      <div>
+        <h1>
+          {" "}
+          <u> Is Your Birth Year a Leap Year? </u>{" "}
+        </h1>
+        <h2> Please enter your birthday </h2>
+        <input type="date" onChange={changeHandler} />
+        <button onClick={() => userMessage(yearToCheck)}>Check</button>
+      </div>
       {output}
     </div>
   );

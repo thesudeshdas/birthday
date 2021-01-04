@@ -3,8 +3,10 @@ import { BrowserRouter as Switch, Route, Link } from "react-router-dom";
 
 import { LEAP, PRIME, LUCKY, PALLINDROME } from "../index.js";
 
-import leapImg from "../images/leap-pic.jpg";
+import leapPic from "../images/leap-pic.jpg";
 import luckyPic from "../images/lucky-pic.jpg";
+import primePic from "../images/prime-pic.jpg";
+import pallindromePic from "../images/pallindrome-pic.jpg";
 
 const HOME = () => {
   return (
@@ -13,12 +15,13 @@ const HOME = () => {
 
       <div className="container-games">
         <div className="game-card">
-          <img src={leapImg} alt="leap-pic" width="100%" />
+          <img src={leapPic} alt="leap-pic" width="100%" />
           <Link to="/leap-birthyear" className="link-game">
             Leap Birthyear
           </Link>
         </div>
         <div className="game-card">
+          <img src={primePic} alt="prime-pic" width="100%" />
           <Link to="/prime-birthday" className="link-game">
             Prime Birthday
           </Link>
@@ -30,6 +33,7 @@ const HOME = () => {
           </Link>
         </div>
         <div className="game-card">
+          <img src={pallindromePic} alt="pallindrome-pic" width="100%" />
           <Link to="/pallindrom-birthday" className="link-game">
             Pallindrome Birthday
           </Link>

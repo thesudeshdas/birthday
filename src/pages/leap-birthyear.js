@@ -87,6 +87,12 @@ const LEAP = () => {
         <button onClick={() => userMessage(yearToCheck)}>Check</button>
       </div>
       {output}
+
+      <div className="container-error-bg">
+        <div className="container-error">
+          <h1>This is error container</h1>
+        </div>
+      </div>
     </div>
   );
 };

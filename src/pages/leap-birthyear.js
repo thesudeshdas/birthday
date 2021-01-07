@@ -10,13 +10,27 @@ const LEAP = () => {
 
   const [yearToCheck, setYearToCheck] = useState();
   const [output, setOutput] = useState(result);
+  const [errorMessage, setErrorMessage] = useState();
 
   const changeHandler = (event) => {
     setYearToCheck(event.target.value.slice(0, 4));
   };
 
+  const closeError = () => {
+    setErrorMessage();
+  };
+
   const showError = () => {
-    alert("please give your birthday");
+    const x = (
+      <div className="container-error-bg">
+        <div className="container-error">
+          <h1>Please input your Birthday Correctly!</h1>
+          <i className="far fa-times-circle" onClick={() => closeError()}></i>
+        </div>
+      </div>
+    );
+
+    setErrorMessage(x);
   };
 
   const checkLeap = (year) => {
@@ -87,13 +101,7 @@ const LEAP = () => {
         <button onClick={() => userMessage(yearToCheck)}>Check</button>
       </div>
       {output}
-      <div className="container-error-bg">
-        <div className="container-error">
-          <h1>Please input your Birthday Correctly!</h1>
-          <i className="far fa-times-circle"></i>
-        </div>
-      </div>
-      ;
+      {errorMessage}
     </div>
   );
 };
